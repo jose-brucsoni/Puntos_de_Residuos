@@ -1,0 +1,185 @@
+/* ========================================
+   PÁGINA CONTACTO - Estilos específicos
+   ======================================== */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text-white);
+    padding: var(--spacing-4xl) 0;
+    text-align: center;
+}
+
+.page-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-white);
+}
+
+.page-description {
+    font-size: var(--font-size-xl);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--color-background-white);
+    padding: var(--spacing-4xl) 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: start;
+}
+
+.contact-info {
+    max-width: 500px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.social-links {
+    margin-top: var(--spacing-xl);
+}
+
+.social-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.social-list {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-background-dark);
+    border-radius: var(--border-radius-full);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.social-link img {
+    transition: transform var(--transition-fast);
+}
+
+.social-link:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Form */
+.contact-form-container {
+    position: sticky;
+    top: var(--spacing-xl);
+}
+
+.form-card {
+    background-color: var(--color-background-white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid #E0E0E0;
+}
+
+.form-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.form-description {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--color-background);
+    padding: var(--spacing-4xl) 0;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .contact-form-container {
+        position: static;
+    }
+    
+    .page-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .page-description {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .page-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .page-description {
+        font-size: var(--font-size-base);
+    }
+    
+    .contact-section,
+    .faq-section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .form-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .contact-methods {
+        gap: var(--spacing-md);
+    }
+    
+    .social-list {
+        justify-content: center;
+    }
+}

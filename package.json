@@ -29,16 +29,16 @@
     "css",
     "javascript"
   ],
-  "author": "Tu Nombre <tu.email@ejemplo.com>",
+  "author": "Jose Carlo Suarez Brucsoni <josebrucsoni@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tu-usuario/puntos-de-residuos.git"
+    "url": "https://github.com/jose-brucsoni/Puntos_de_Residuos.git"
   },
   "bugs": {
-    "url": "https://github.com/tu-usuario/puntos-de-residuos/issues"
+    "url": "https://github.com/jose-brucsoni/Puntos_de_Residuos/issues"
   },
-  "homepage": "https://tu-usuario.github.io/puntos-de-residuos",
+  "homepage": "https://jose-brucsoni.github.io/Puntos_de_Residuos/",
   "devDependencies": {
     "live-server": "^1.2.2",
     "http-server": "^14.1.1",

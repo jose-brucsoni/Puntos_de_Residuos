@@ -59,7 +59,7 @@ puntos-de-residuos/
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/puntos-de-residuos.git
+   git clone https://github.com/jose-brucsoni/PuntosDeResiduos.git
    cd puntos-de-residuos
    ```
 
@@ -178,15 +178,15 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 👥 Equipo
 
-- **Desarrollador Principal**: Tu Nombre
-- **Diseño UX/UI**: Tu Nombre
-- **Testing**: Tu Nombre
+- **Desarrollador Principal**: Jose Carlo Suarez Brucsoni
+- **Diseño UX/UI**: Jose Carlo Suarez Brucsoni
+- **Testing**: Jose Carlo Suarez Brucsoni
 
 ## 📞 Contacto
 
-- **Email**: info@puntosresiduos.com
-- **Website**: https://puntosresiduos.com
-- **GitHub**: https://github.com/tu-usuario/puntos-de-residuos
+- **Email**: josebrucsoni@outlook.com
+- **Website**: https://jose-brucsoni.github.io/Puntos_de_Residuos/
+- **GitHub**: https://jose-brucsoni.github.io/Puntos_de_Residuos/
 
 ## 🙏 Agradecimientos
 

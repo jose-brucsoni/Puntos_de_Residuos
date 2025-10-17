@@ -6,7 +6,6 @@
 /* Importar archivos CSS organizados */
 @import url('utilities/reset.css');
 @import url('utilities/variables.css');
-@import url('utilities/mixins.css');
 @import url('utilities/utilities.css');
 
 /* Estilos base */
@@ -15,7 +14,6 @@
 
 /* Componentes */
 @import url('components/header.css');
-@import url('components/navigation.css');
 @import url('components/footer.css');
 @import url('components/buttons.css');
 @import url('components/forms.css');
