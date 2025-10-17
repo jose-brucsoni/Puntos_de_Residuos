@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de gestión de puntos de residuos - Proyecto web para la gestión eficiente de residuos">
+    <meta name="keywords" content="residuos, reciclaje, gestión, medio ambiente, sostenibilidad">
+    <meta name="author" content="Tu Nombre">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.com/">
+    <meta property="og:title" content="Puntos de Residuos - Gestión Eficiente">
+    <meta property="og:description" content="Sistema de gestión de puntos de residuos para una mejor gestión del medio ambiente">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tudominio.com/">
+    <meta property="twitter:title" content="Puntos de Residuos - Gestión Eficiente">
+    <meta property="twitter:description" content="Sistema de gestión de puntos de residuos para una mejor gestión del medio ambiente">
+    <meta property="twitter:image" content="./assets/images/og-image.jpg">
+
+    <title>Puntos de Residuos - Gestión Eficiente</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="./css/main.css" as="style">
+    <link rel="preload" href="./js/main.js" as="script">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <!-- Fuentes de Google (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="container-responsive">
+                <div class="nav-brand">
+                    <a href="./index.html" class="brand-link">
+                        <img src="./assets/images/logos/logo.svg" alt="Puntos de Residuos" class="brand-logo">
+                        <span class="brand-text">Puntos de Residuos</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="main-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/about.html" class="nav-link">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/services.html" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/contact.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="btn btn-primary" data-modal="contact-modal">
+                        Contactar
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container-responsive">
+                <div class="hero-content">
+                    <div class="hero-text" data-animate="fade-in">
+                        <h1 class="hero-title">
+                            Gestión Eficiente de 
+                            <span class="text-primary">Puntos de Residuos</span>
+                        </h1>
+                        <p class="hero-description">
+                            Optimiza la gestión de residuos en tu comunidad con nuestro sistema 
+                            inteligente que facilita el reciclaje y la sostenibilidad ambiental.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-lg" data-modal="contact-modal">
+                                Comenzar Ahora
+                            </button>
+                            <button class="btn btn-secondary btn-lg" data-scroll="#features">
+                                Conocer Más
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-animate="slide-left">
+                        <img src="./assets/images/hero/hero-main.jpg" 
+                             alt="Gestión de residuos" 
+                             class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container-responsive">
+                <div class="section-header" data-animate="fade-in">
+                    <h2 class="section-title">Características Principales</h2>
+                    <p class="section-description">
+                        Descubre las funcionalidades que hacen de nuestro sistema la mejor opción 
+                        para la gestión de residuos.
+                    </p>
+                </div>
+                
+                <div class="features-grid grid-responsive-3">
+                    <div class="feature-card" data-animate="scale-up" data-delay="100">
+                        <div class="feature-icon">
+                            <img src="./assets/icons/ui/map.svg" alt="Geolocalización" width="48" height="48">
+                        </div>
+                        <h3 class="feature-title">Geolocalización</h3>
+                        <p class="feature-description">
+                            Localiza puntos de residuos cercanos y encuentra la ruta más eficiente 
+                            para tu recolección.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-animate="scale-up" data-delay="200">
+                        <div class="feature-icon">
+                            <img src="./assets/icons/ui/analytics.svg" alt="Analytics" width="48" height="48">
+                        </div>
+                        <h3 class="feature-title">Analytics</h3>
+                        <p class="feature-description">
+                            Obtén estadísticas detalladas sobre la gestión de residuos y 
+                            optimiza tus procesos.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-animate="scale-up" data-delay="300">
+                        <div class="feature-icon">
+                            <img src="./assets/icons/ui/notification.svg" alt="Notificaciones" width="48" height="48">
+                        </div>
+                        <h3 class="feature-title">Notificaciones</h3>
+                        <p class="feature-description">
+                            Recibe alertas sobre el estado de los puntos de residuos y 
+                            actualizaciones importantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container-responsive">
+                <div class="cta-content" data-animate="fade-in">
+                    <h2 class="cta-title">¿Listo para Optimizar tu Gestión de Residuos?</h2>
+                    <p class="cta-description">
+                        Únete a nuestra plataforma y comienza a gestionar los residuos de manera 
+                        más eficiente y sostenible.
+                    </p>
+                    <div class="cta-actions">
+                        <button class="btn btn-primary btn-lg" data-modal="contact-modal">
+                            Solicitar Demo
+                        </button>
+                        <button class="btn btn-outline btn-lg">
+                            Ver Documentación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container-responsive">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="./assets/images/logos/logo-white.svg" alt="Puntos de Residuos" class="footer-logo">
+                        <p class="footer-description">
+                            Sistema inteligente para la gestión eficiente de puntos de residuos 
+                            y promoción de la sostenibilidad ambiental.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pages/about.html">Acerca de</a></li>
+                        <li><a href="./pages/services.html">Servicios</a></li>
+                        <li><a href="./pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="./docs/api.html">API</a></li>
+                        <li><a href="./docs/guides.html">Guías</a></li>
+                        <li><a href="./docs/faq.html">FAQ</a></li>
+                        <li><a href="./docs/support.html">Soporte</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <p>📧 info@puntosresiduos.com</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 Ciudad, País</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Puntos de Residuos. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <img src="./assets/icons/social/facebook.svg" alt="Facebook" width="24" height="24">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <img src="./assets/icons/social/twitter.svg" alt="Twitter" width="24" height="24">
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <img src="./assets/icons/social/linkedin.svg" alt="LinkedIn" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <div class="modal" id="contact-modal" data-modal>
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <h3>Contactar</h3>
+            </div>
+            <div class="modal-body">
+                <form class="contact-form" data-validate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje *</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

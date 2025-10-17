@@ -1,0 +1,12 @@
+# Si tienes un dominio personalizado, colócalo aquí
+# Ejemplo: mi-dominio.com
+# 
+# Para usar GitHub Pages con dominio personalizado:
+# 1. Agrega tu dominio en este archivo
+# 2. Configura los registros DNS de tu dominio
+# 3. GitHub Pages detectará automáticamente el CNAME
+#
+# Si no tienes dominio personalizado, puedes eliminar este archivo
+# y usar la URL por defecto: https://jose-brucsoni.github.io/Puntos_de_Residuos/
+/
+

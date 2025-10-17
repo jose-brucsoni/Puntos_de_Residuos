@@ -1,0 +1,228 @@
+/* ========================================
+   RESPONSIVE UTILITIES - Clases responsivas
+   ======================================== */
+
+/* Mobile First - Ocultar en móvil */
+.hidden-mobile {
+    @media (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+/* Mostrar solo en móvil */
+.visible-mobile {
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+/* Ocultar en tablet */
+.hidden-tablet {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        display: none !important;
+    }
+}
+
+/* Mostrar solo en tablet */
+.visible-tablet {
+    @media (max-width: 767px), (min-width: 1024px) {
+        display: none !important;
+    }
+}
+
+/* Ocultar en desktop */
+.hidden-desktop {
+    @media (min-width: 1024px) {
+        display: none !important;
+    }
+}
+
+/* Mostrar solo en desktop */
+.visible-desktop {
+    @media (max-width: 1023px) {
+        display: none !important;
+    }
+}
+
+/* Grid responsivo */
+.grid-responsive-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.grid-responsive-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.grid-responsive-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-responsive-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Flexbox responsivo */
+.flex-responsive {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.flex-responsive-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+/* Texto responsivo */
+.text-responsive {
+    font-size: var(--font-size-base);
+    
+    @media (min-width: 768px) {
+        font-size: var(--font-size-lg);
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: var(--font-size-xl);
+    }
+}
+
+.text-responsive-sm {
+    font-size: var(--font-size-sm);
+    
+    @media (min-width: 768px) {
+        font-size: var(--font-size-base);
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: var(--font-size-lg);
+    }
+}
+
+.text-responsive-lg {
+    font-size: var(--font-size-lg);
+    
+    @media (min-width: 768px) {
+        font-size: var(--font-size-xl);
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+/* Espaciado responsivo */
+.p-responsive {
+    padding: var(--spacing-md);
+    
+    @media (min-width: 768px) {
+        padding: var(--spacing-lg);
+    }
+    
+    @media (min-width: 1024px) {
+        padding: var(--spacing-xl);
+    }
+}
+
+.m-responsive {
+    margin: var(--spacing-md);
+    
+    @media (min-width: 768px) {
+        margin: var(--spacing-lg);
+    }
+    
+    @media (min-width: 1024px) {
+        margin: var(--spacing-xl);
+    }
+}
+
+/* Container responsivo */
+.container-responsive {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    
+    @media (min-width: 640px) {
+        max-width: 640px;
+    }
+    
+    @media (min-width: 768px) {
+        max-width: 768px;
+        padding: 0 var(--spacing-lg);
+    }
+    
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+        padding: 0 var(--spacing-xl);
+    }
+    
+    @media (min-width: 1280px) {
+        max-width: 1280px;
+    }
+    
+    @media (min-width: 1536px) {
+        max-width: 1536px;
+    }
+}
+
+/* Imágenes responsivas */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-responsive-square {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.img-responsive-16-9 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.img-responsive-4-3 {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}

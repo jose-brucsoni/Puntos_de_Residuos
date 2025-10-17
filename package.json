@@ -1,0 +1,66 @@
+{
+  "name": "puntos-de-residuos",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de puntos de residuos desarrollado con HTML, CSS y JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/index.html",
+    "dev": "npx live-server --port=3000 --open=/index.html --watch=.",
+    "build": "echo 'Build process for static site'",
+    "lint:css": "npx stylelint 'css/**/*.css'",
+    "lint:js": "npx eslint 'js/**/*.js'",
+    "format": "npx prettier --write '**/*.{html,css,js,json,md}'",
+    "validate:html": "npx html-validate '**/*.html'",
+    "optimize:images": "npx imagemin 'assets/images/**/*.{jpg,png,svg}' --out-dir='assets/images/optimized'",
+    "test": "echo 'No tests configured yet'",
+    "serve": "npx http-server -p 8080 -o",
+    "deploy": "gh-pages -d .",
+    "predeploy": "npm run lint:css && npm run lint:js && npm run validate:html"
+  },
+  "keywords": [
+    "residuos",
+    "reciclaje",
+    "gestión",
+    "medio-ambiente",
+    "sostenibilidad",
+    "geolocalización",
+    "web",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Tu Nombre <tu.email@ejemplo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/puntos-de-residuos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/puntos-de-residuos/issues"
+  },
+  "homepage": "https://tu-usuario.github.io/puntos-de-residuos",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "prettier": "^3.2.5",
+    "html-validate": "^8.7.4",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "gh-pages": "^6.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

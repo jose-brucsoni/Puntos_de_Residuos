@@ -1,0 +1,145 @@
+/* ========================================
+   MIXINS CSS - Funciones reutilizables
+   ======================================== */
+
+/* Mixin para centrar elementos */
+@mixin center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mixin para centrar con position absolute */
+@mixin center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Mixin para botones base */
+@mixin button-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+/* Mixin para botón primario */
+@mixin button-primary {
+    @include button-base;
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+    
+    &:hover {
+        background-color: var(--color-primary-dark);
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-md);
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+/* Mixin para botón secundario */
+@mixin button-secondary {
+    @include button-base;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    
+    &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-text-white);
+    }
+}
+
+/* Mixin para cards */
+@mixin card {
+    background-color: var(--color-background-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    transition: all var(--transition-normal);
+    
+    &:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+    }
+}
+
+/* Mixin para formularios */
+@mixin form-input {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 2px solid #E0E0E0;
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+    transition: border-color var(--transition-fast);
+    
+    &:focus {
+        outline: none;
+        border-color: var(--color-primary);
+    }
+    
+    &::placeholder {
+        color: var(--color-text-light);
+    }
+}
+
+/* Mixin para responsive */
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+/* Mixin para grid responsivo */
+@mixin grid-responsive($cols: 1, $gap: var(--spacing-md)) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+    
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+    
+    @include tablet {
+        grid-template-columns: repeat(min($cols, 2), 1fr);
+    }
+}
+
+/* Mixin para texto truncado */
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Mixin para múltiples líneas truncadas */
+@mixin text-truncate-lines($lines: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
