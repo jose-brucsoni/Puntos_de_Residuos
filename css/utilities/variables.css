@@ -3,12 +3,19 @@
    ======================================== */
 
 :root {
-    /* Colores principales */
-    --color-primary: #2E7D32;
-    --color-primary-light: #4CAF50;
-    --color-primary-dark: #1B5E20;
-    --color-secondary: #FF6F00;
-    --color-accent: #00BCD4;
+    /* Colores principales - Tema de gestión de residuos */
+    --color-primary: #2E7D32;        /* Verde principal - sostenibilidad */
+    --color-primary-light: #4CAF50;  /* Verde claro */
+    --color-primary-dark: #1B5E20;   /* Verde oscuro */
+    --color-secondary: #FF6F00;      /* Naranja - alertas y acciones */
+    --color-accent: #00BCD4;         /* Azul cian - información */
+    
+    /* Colores específicos del proyecto */
+    --color-waste-organic: #8BC34A;   /* Verde para residuos orgánicos */
+    --color-waste-plastic: #FF9800;   /* Naranja para plásticos */
+    --color-waste-paper: #2196F3;     /* Azul para papel */
+    --color-waste-glass: #9C27B0;     /* Púrpura para vidrio */
+    --color-waste-metal: #607D8B;     /* Gris para metales */
     
     /* Colores de texto */
     --color-text: #212121;
@@ -85,4 +92,9 @@
     --z-modal: 1050;
     --z-popover: 1060;
     --z-tooltip: 1070;
+    --z-notifications: 10000;
+    
+    /* Animaciones específicas */
+    --animation-slide-in-right: slideInRight 0.3s ease-out;
+    --animation-slide-out-right: slideOutRight 0.3s ease-in;
 }

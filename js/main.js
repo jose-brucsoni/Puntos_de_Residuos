@@ -8,6 +8,7 @@
 import { initNavigation } from './components/navigation.js';
 import { initForms } from './components/forms.js';
 import { initModals } from './components/modals.js';
+import { initWasteManagement } from './components/waste-management.js';
 import { initAnimations } from './utils/animations.js';
 import { initUtils } from './utils/utils.js';
 
@@ -61,6 +62,7 @@ class App {
             { name: 'navigation', init: initNavigation },
             { name: 'forms', init: initForms },
             { name: 'modals', init: initModals },
+            { name: 'wasteManagement', init: initWasteManagement },
             { name: 'animations', init: initAnimations },
             { name: 'utils', init: initUtils }
         ];

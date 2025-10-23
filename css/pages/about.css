@@ -90,16 +90,51 @@
     gap: var(--spacing-xl);
 }
 
-/* Team Section */
-.team-section {
+/* Justification Section */
+.justification-section {
     background-color: var(--color-background-white);
     padding: var(--spacing-4xl) 0;
 }
 
-.team-grid {
+.justification-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-xl);
+}
+
+.justification-card {
+    background-color: var(--color-background-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid #E0E0E0;
+    transition: all var(--transition-normal);
+    text-align: center;
+}
+
+.justification-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.justification-icon {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+}
+
+.justification-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.justification-description {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    text-align: left;
 }
 
 /* Responsive */
@@ -143,12 +178,12 @@
     
     .mission-section,
     .values-section,
-    .team-section {
+    .justification-section {
         padding: var(--spacing-2xl) 0;
     }
     
     .values-grid,
-    .team-grid {
+    .justification-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }

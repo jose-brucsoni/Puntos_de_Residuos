@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta con nuestro equipo para obtener más información sobre nuestro sistema de gestión de puntos de residuos">
-    <title>Contacto - Puntos de Residuos</title>
+    <meta name="description" content="Contacta con el equipo del proyecto de gestión de residuos sólidos urbanos del Distrito 11 de Santa Cruz de la Sierra">
+    <title>Contacto - Gestión de Residuos Distrito 11</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
@@ -24,8 +24,8 @@
             <div class="container-responsive">
                 <div class="nav-brand">
                     <a href="../index.html" class="brand-link">
-                        <img src="../assets/images/logos/logo.svg" alt="Puntos de Residuos" class="brand-logo">
-                        <span class="brand-text">Puntos de Residuos</span>
+                        <img src="../assets/images/una-papelera-de-reciclaje.jpg" alt="Puntos de Residuos" class="brand-logo">
+                        <span class="brand-text">Residuos Distrito 11</span>
                     </a>
                 </div>
                 
@@ -66,8 +66,8 @@
                 <div class="page-header-content" data-animate="fade-in">
                     <h1 class="page-title">Contacto</h1>
                     <p class="page-description">
-                        ¿Tienes preguntas sobre nuestro sistema? Estamos aquí para ayudarte. 
-                        Contáctanos y te responderemos lo antes posible.
+                        ¿Tienes preguntas sobre el proyecto de gestión de residuos? ¿Quieres reportar 
+                        un problema en tu barrio? Estamos aquí para ayudarte y mejorar el servicio.
                     </p>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <div class="contact-info" data-animate="fade-in">
                         <h2 class="section-title">Información de Contacto</h2>
                         <p class="section-description">
-                            Puedes contactarnos a través de cualquiera de los siguientes medios:
+                            Oficina del Proyecto de Gestión de Residuos Sólidos Urbanos - Distrito 11
                         </p>
                         
                         <div class="contact-methods">
@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="method-info">
                                     <h3 class="method-title">Email</h3>
-                                    <p class="method-value">info@puntosresiduos.com</p>
+                                    <p class="method-value">residuos.distrito11@santacruz.gob.bo</p>
                                     <p class="method-description">Respuesta en 24 horas</p>
                                 </div>
                             </div>
@@ -101,8 +101,8 @@
                                 </div>
                                 <div class="method-info">
                                     <h3 class="method-title">Teléfono</h3>
-                                    <p class="method-value">+1 (555) 123-4567</p>
-                                    <p class="method-description">Lunes a Viernes, 9:00 - 18:00</p>
+                                    <p class="method-value">+591 709-188-74</p>
+                                    <p class="method-description">Lunes a Viernes, 8:00 - 17:00</p>
                                 </div>
                             </div>
                             
@@ -112,14 +112,14 @@
                                 </div>
                                 <div class="method-info">
                                     <h3 class="method-title">Oficina</h3>
-                                    <p class="method-value">Calle Principal 123, Ciudad</p>
+                                    <p class="method-value">Subalcaldía Distrito 11, Santa Cruz de la Sierra</p>
                                     <p class="method-description">Visitas con cita previa</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="social-links">
-                            <h3 class="social-title">Síguenos en Redes Sociales</h3>
+                            <h3 class="social-title">Síguenos para Actualizaciones del Proyecto</h3>
                             <div class="social-list">
                                 <a href="#" class="social-link" aria-label="Facebook">
                                     <img src="../assets/icons/social/facebook.svg" alt="Facebook" width="32" height="32">
@@ -139,9 +139,10 @@
                     
                     <div class="contact-form-container" data-animate="slide-left">
                         <div class="form-card">
-                            <h3 class="form-title">Envíanos un Mensaje</h3>
+                            <h3 class="form-title">Reportar Problema o Consulta</h3>
                             <p class="form-description">
-                                Completa el formulario y nos pondremos en contacto contigo.
+                                Completa el formulario para reportar incidencias o hacer consultas 
+                                sobre el servicio de recolección de residuos en tu barrio.
                             </p>
                             
                             <form class="contact-form" data-validate>
@@ -172,28 +173,42 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="subject" class="form-label">Asunto *</label>
-                                    <select id="subject" name="subject" class="form-select" required>
-                                        <option value="">Selecciona un asunto</option>
-                                        <option value="demo">Solicitar Demo</option>
-                                        <option value="pricing">Consulta de Precios</option>
-                                        <option value="support">Soporte Técnico</option>
-                                        <option value="partnership">Partnership</option>
-                                        <option value="other">Otro</option>
+                                    <label for="barrio" class="form-label">Barrio *</label>
+                                    <select id="barrio" name="barrio" class="form-select" required>
+                                        <option value="">Selecciona tu barrio</option>
+                                        <option value="plan-3000">Plan 3000</option>
+                                        <option value="villa-1ro-mayo">Villa 1ro de Mayo</option>
+                                        <option value="villa-montes">Villa Montes</option>
+                                        <option value="villa-copacabana">Villa Copacabana</option>
+                                        <option value="villa-san-antonio">Villa San Antonio</option>
+                                        <option value="otro">Otro</option>
                                     </select>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="message" class="form-label">Mensaje *</label>
+                                    <label for="subject" class="form-label">Tipo de Consulta *</label>
+                                    <select id="subject" name="subject" class="form-select" required>
+                                        <option value="">Selecciona el tipo</option>
+                                        <option value="recojo-no-realizado">Recojo no realizado</option>
+                                        <option value="contenedor-lleno">Contenedor lleno</option>
+                                        <option value="microbasural">Microbasural</option>
+                                        <option value="horarios">Consulta de horarios</option>
+                                        <option value="sugerencia">Sugerencia de mejora</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Descripción del Problema *</label>
                                     <textarea id="message" name="message" class="form-textarea" rows="5" 
-                                              placeholder="Cuéntanos más sobre tu consulta..." required></textarea>
+                                              placeholder="Describe detalladamente el problema o consulta, incluyendo la ubicación exacta..." required></textarea>
                                 </div>
                                 
                                 <div class="form-group">
                                     <label class="checkbox-label">
                                         <input type="checkbox" name="newsletter" class="form-checkbox">
                                         <span class="checkbox-text">
-                                            Quiero recibir actualizaciones sobre el producto
+                                            Quiero recibir actualizaciones sobre el proyecto de residuos
                                         </span>
                                     </label>
                                 </div>
@@ -202,14 +217,14 @@
                                     <label class="checkbox-label">
                                         <input type="checkbox" name="privacy" class="form-checkbox" required>
                                         <span class="checkbox-text">
-                                            Acepto la <a href="../docs/privacy.html" target="_blank">política de privacidad</a> *
+                                            Acepto el tratamiento de mis datos personales para el proyecto *
                                         </span>
                                     </label>
                                 </div>
                                 
                                 <div class="form-actions">
                                     <button type="submit" class="btn btn-primary btn-lg">
-                                        <span class="btn-text">Enviar Mensaje</span>
+                                        <span class="btn-text">Enviar Reporte</span>
                                         <div class="btn-loading" style="display: none;">
                                             <div class="loading-spinner"></div>
                                             Enviando...
@@ -229,48 +244,49 @@
                 <div class="section-header" data-animate="fade-in">
                     <h2 class="section-title">Preguntas Frecuentes</h2>
                     <p class="section-description">
-                        Encuentra respuestas a las preguntas más comunes sobre nuestro sistema.
+                        Encuentra respuestas a las preguntas más comunes sobre el proyecto 
+                        de gestión de residuos en el Distrito 11.
                     </p>
                 </div>
                 
                 <div class="faq-list">
                     <div class="faq-item" data-animate="fade-in" data-delay="100">
                         <button class="faq-question">
-                            <span>¿Cómo funciona el sistema de geolocalización?</span>
+                            <span>¿Cuáles son los horarios de recolección en mi barrio?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Nuestro sistema utiliza GPS y mapas interactivos para localizar puntos de residuos cercanos, calcular rutas optimizadas y proporcionar información en tiempo real sobre el estado de cada punto.</p>
+                            <p>Los horarios varían según el barrio. Plan 3000 y Villa Montes tienen recolección 3 veces por semana (Lunes, Miércoles, Viernes), mientras que Villa 1ro de Mayo, Villa Copacabana y Villa San Antonio tienen recolección 2 veces por semana. Consulta la sección de servicios para horarios específicos.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item" data-animate="fade-in" data-delay="200">
                         <button class="faq-question">
-                            <span>¿Qué tipos de residuos puede gestionar el sistema?</span>
+                            <span>¿Cómo puedo reportar que no se realizó la recolección?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>El sistema puede gestionar todos los tipos de residuos: orgánicos, plásticos, papel, vidrio, metales, electrónicos y residuos peligrosos, con categorización específica para cada tipo.</p>
+                            <p>Puedes reportar incidencias a través de la plataforma web, llamando al +591 709-188-74, o enviando un email a residuos.distrito11@santacruz.gob.bo. Incluye tu barrio, dirección exacta y descripción del problema.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item" data-animate="fade-in" data-delay="300">
                         <button class="faq-question">
-                            <span>¿Es compatible con sistemas existentes?</span>
+                            <span>¿Qué hago si hay un microbasural en mi zona?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Sí, nuestro sistema está diseñado para integrarse fácilmente con sistemas de gestión municipal existentes a través de APIs y conectores estándar.</p>
+                            <p>Reporta inmediatamente el microbasural a través de cualquiera de nuestros canales de contacto. Proporciona la ubicación exacta, fotos si es posible, y describir el tipo de residuos. Nuestro equipo coordinará con la empresa de aseo para su limpieza.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item" data-animate="fade-in" data-delay="400">
                         <button class="faq-question">
-                            <span>¿Qué tipo de soporte ofrecen?</span>
+                            <span>¿Cuándo estará disponible la aplicación móvil?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Ofrecemos soporte técnico 24/7, capacitación para equipos, documentación completa y actualizaciones regulares del sistema.</p>
+                            <p>La aplicación móvil estará disponible en el segundo trimestre de 2025. Mientras tanto, puedes usar la plataforma web para consultar horarios, reportar incidencias y acceder a información educativa sobre gestión de residuos.</p>
                         </div>
                     </div>
                 </div>
@@ -284,10 +300,10 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <img src="../assets/images/logos/logo-white.svg" alt="Puntos de Residuos" class="footer-logo">
+                        <img src="../assets/images/logos/logo-white.svg" alt="Residuos Distrito 11" class="footer-logo">
                         <p class="footer-description">
-                            Sistema inteligente para la gestión eficiente de puntos de residuos 
-                            y promoción de la sostenibilidad ambiental.
+                            Plataforma móvil para la gestión eficiente de residuos sólidos urbanos 
+                            en el Distrito 11 de Santa Cruz de la Sierra, Bolivia.
                         </p>
                     </div>
                 </div>
@@ -315,16 +331,16 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Contacto</h4>
                     <div class="footer-contact">
-                        <p>📧 info@puntosresiduos.com</p>
-                        <p>📞 +1 (555) 123-4567</p>
-                        <p>📍 Ciudad, País</p>
+                        <p>📧 residuos.distrito11@santacruz.gob.bo</p>
+                        <p>📞 +591 709-188-74</p>
+                        <p>📍 Distrito 11, Santa Cruz de la Sierra, Bolivia</p>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2024 Puntos de Residuos. Todos los derechos reservados.</p>
+                    <p>&copy; 2025 Sistema de Gestión de Residuos Distrito 11. Todos los derechos reservados.</p>
                 </div>
                 <div class="footer-social">
                     <a href="#" class="social-link" aria-label="Facebook">
