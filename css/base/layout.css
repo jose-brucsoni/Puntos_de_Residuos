@@ -10,7 +10,6 @@ html {
 body {
     font-family: var(--font-primary);
     line-height: 1.6;
-    color: var(--color-text);
     background-color: var(--color-background);
     margin: 0;
     padding: 0;

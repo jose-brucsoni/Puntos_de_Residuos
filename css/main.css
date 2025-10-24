@@ -20,6 +20,7 @@
 @import url('components/cards.css');
 @import url('components/waste-management.css');
 @import url('components/font-awesome.css');
+@import url('components/hero-responsive.css');
 
 /* Páginas específicas */
 @import url('pages/home.css');

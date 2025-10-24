@@ -40,7 +40,6 @@ h6 {
 p {
     margin-bottom: var(--spacing-md);
     line-height: 1.6;
-    color: var(--color-text);
 }
 
 /* Enlaces */
