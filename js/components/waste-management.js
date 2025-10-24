@@ -10,11 +10,11 @@ export function initWasteManagement() {
         config: {
             apiUrl: '/api/waste-management',
             barrios: [
-                { id: 'plan-3000', name: 'Plan 3000', schedule: ['Lunes', 'Miércoles', 'Viernes'] },
+                { id: 'Calle-Guatemala-&-Nicaragua', name: 'Calle Guatemala & Nicaragua', schedule: ['Lunes', 'Miércoles', 'Viernes'] },
                 { id: 'Calle-Junin-&-21-de-Mayo', name: 'Calle Junin & 21 de Mayo', schedule: ['Martes', 'Jueves'] },
-                { id: 'villa-montes', name: 'Villa Montes', schedule: ['Lunes', 'Miércoles', 'Viernes'] },
-                { id: 'Calle-Quijarro', name: 'Calle Quijarro', schedule: ['Martes', 'Jueves'] },
-                { id: 'villa-san-antonio', name: 'Villa San Antonio', schedule: ['Lunes', 'Miércoles', 'Viernes'] }
+                { id: 'Calle-Guarayos-&-Sutos', name: 'Calle Guarayos & Sutos', schedule: ['Lunes', 'Miércoles', 'Viernes'] },
+                { id: 'Calle-Quijarro-&-Charcas', name: 'Calle Quijarro & Charcas', schedule: ['Martes', 'Jueves'] },
+                { id: 'Av-Ejercito-Nacional-&-Ana-Barba', name: 'Av. Ejercito Nacional & Ana Barba', schedule: ['Lunes', 'Miércoles', 'Viernes'] }
             ],
             tiposReporte: [
                 { id: 'recojo-no-realizado', name: 'Recojo no realizado', priority: 'high' },
