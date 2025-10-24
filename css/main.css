@@ -27,6 +27,7 @@
 @import url('pages/about.css');
 @import url('pages/contact.css');
 @import url('pages/services.css');
+@import url('pages/points.css');
 
 /* Responsive */
 @import url('utilities/responsive.css');

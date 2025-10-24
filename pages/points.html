@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Puntos de recolección de residuos sólidos urbanos en el Distrito 11 de Santa Cruz de la Sierra">
+    <title>Puntos de Residuos - Distrito 11 Santa Cruz</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="container-responsive">
+                <div class="nav-brand">
+                    <a href="../index.html" class="brand-link">
+                        <img src="../assets/images/una-papelera-de-reciclaje.jpg" alt="Residuos Distrito 11" class="brand-logo">
+                        <span class="brand-text">Residuos Distrito 11</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="main-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./services.html" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./points.html" class="nav-link active">Puntos de Residuos</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="btn btn-primary" data-modal="contact-modal">
+                        Reportar
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container-responsive">
+                <div class="page-header-content" data-animate="fade-in">
+                    <h1 class="page-title">Puntos de Recolección de Residuos</h1>
+                    <p class="page-description">
+                        Ubicaciones estratégicas para la recolección de residuos sólidos urbanos 
+                        en el Distrito 11 de Santa Cruz de la Sierra.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container-responsive">
+                <div class="section-header" data-animate="fade-in">
+                    <h2 class="section-title">Mapa del Distrito 11</h2>
+                    <p class="section-description">
+                        Visualiza la distribución de puntos de recolección y barrios del Distrito 11
+                    </p>
+                </div>
+                
+                <div class="map-container" data-animate="scale-up">
+                    <div class="map-image">
+                        <img src="../assets/images/ImagenDelDistrito.jpg" 
+                             alt="Mapa del Distrito 11 - Puntos de Residuos" 
+                             class="img-responsive">
+                        
+                        <!-- Interactive Points Overlay -->
+                        <div class="map-points">
+                            <!-- Plan 3000 -->
+                            <div class="map-point" data-barrio="plan-3000" style="top: 25%; left: 30%;">
+                                <div class="point-marker">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="point-info">
+                                    <h4>Plan 3000</h4>
+                                    <p>3x/semana</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Calle Junin & 21 de Mayo -->
+                            <div class="map-point" data-barrio="Calle-Junin-&-21-de-Mayo" style="top: 40%; left: 45%;">
+                                <div class="point-marker">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="point-info">
+                                    <h4>Calle Junin & 21 de Mayo</h4>
+                                    <p>2x/semana</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Villa Montes -->
+                            <div class="map-point" data-barrio="villa-montes" style="top: 60%; left: 25%;">
+                                <div class="point-marker">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="point-info">
+                                    <h4>Villa Montes</h4>
+                                    <p>3x/semana</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Calle Quijarro -->
+                            <div class="map-point" data-barrio="Calle-Quijarro" style="top: 35%; left: 60%;">
+                                <div class="point-marker">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="point-info">
+                                    <h4>Calle Quijarro</h4>
+                                    <p>2x/semana</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Villa San Antonio -->
+                            <div class="map-point" data-barrio="villa-san-antonio" style="top: 70%; left: 50%;">
+                                <div class="point-marker">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="point-info">
+                                    <h4>Villa San Antonio</h4>
+                                    <p>3x/semana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Points List Section -->
+        <section class="points-list-section">
+            <div class="container-responsive">
+                <div class="section-header" data-animate="fade-in">
+                    <h2 class="section-title">Barrios y Horarios de Recolección</h2>
+                    <p class="section-description">
+                        Información detallada sobre los horarios y frecuencia de recolección en cada barrio
+                    </p>
+                </div>
+                
+                <div class="points-grid grid-responsive-2">
+                    <div class="point-card" data-animate="scale-up" data-delay="100">
+                        <div class="point-header">
+                            <div class="point-icon">
+                                <i class="fas fa-home" style="font-size: 32px; color: var(--color-primary);"></i>
+                            </div>
+                            <div class="point-title">
+                                <h3>Plan 3000</h3>
+                                <span class="point-status status-active">Activo</span>
+                            </div>
+                        </div>
+                        <div class="point-schedule">
+                            <h4>Horarios de Recolección:</h4>
+                            <p><strong>Lunes, Miércoles y Viernes</strong></p>
+                            <p>6:00 - 10:00 AM</p>
+                        </div>
+                        <div class="point-stats">
+                            <div class="stat">
+                                <span class="stat-label">Población:</span>
+                                <span class="stat-value">~15,000 hab.</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Frecuencia:</span>
+                                <span class="stat-value">3x/semana</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="point-card" data-animate="scale-up" data-delay="200">
+                        <div class="point-header">
+                            <div class="point-icon">
+                                <i class="fas fa-home" style="font-size: 32px; color: var(--color-accent);"></i>
+                            </div>
+                            <div class="point-title">
+                                <h3>Calle Junin & 21 de Mayo</h3>
+                                <span class="point-status status-active">Activo</span>
+                            </div>
+                        </div>
+                        <div class="point-schedule">
+                            <h4>Horarios de Recolección:</h4>
+                            <p><strong>Martes y Jueves</strong></p>
+                            <p>7:00 - 11:00 AM</p>
+                        </div>
+                        <div class="point-stats">
+                            <div class="stat">
+                                <span class="stat-label">Población:</span>
+                                <span class="stat-value">~8,500 hab.</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Frecuencia:</span>
+                                <span class="stat-value">2x/semana</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="point-card" data-animate="scale-up" data-delay="300">
+                        <div class="point-header">
+                            <div class="point-icon">
+                                <i class="fas fa-home" style="font-size: 32px; color: var(--color-secondary);"></i>
+                            </div>
+                            <div class="point-title">
+                                <h3>Villa Montes</h3>
+                                <span class="point-status status-active">Activo</span>
+                            </div>
+                        </div>
+                        <div class="point-schedule">
+                            <h4>Horarios de Recolección:</h4>
+                            <p><strong>Lunes, Miércoles y Viernes</strong></p>
+                            <p>8:00 - 12:00 PM</p>
+                        </div>
+                        <div class="point-stats">
+                            <div class="stat">
+                                <span class="stat-label">Población:</span>
+                                <span class="stat-value">~12,000 hab.</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Frecuencia:</span>
+                                <span class="stat-value">3x/semana</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="point-card" data-animate="scale-up" data-delay="400">
+                        <div class="point-header">
+                            <div class="point-icon">
+                                <i class="fas fa-home" style="font-size: 32px; color: var(--color-warning);"></i>
+                            </div>
+                            <div class="point-title">
+                                <h3>Calle Quijarro</h3>
+                                <span class="point-status status-active">Activo</span>
+                            </div>
+                        </div>
+                        <div class="point-schedule">
+                            <h4>Horarios de Recolección:</h4>
+                            <p><strong>Martes y Jueves</strong></p>
+                            <p>6:30 - 10:30 AM</p>
+                        </div>
+                        <div class="point-stats">
+                            <div class="stat">
+                                <span class="stat-label">Población:</span>
+                                <span class="stat-value">~6,000 hab.</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Frecuencia:</span>
+                                <span class="stat-value">2x/semana</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="point-card" data-animate="scale-up" data-delay="500">
+                        <div class="point-header">
+                            <div class="point-icon">
+                                <i class="fas fa-home" style="font-size: 32px; color: var(--color-error);"></i>
+                            </div>
+                            <div class="point-title">
+                                <h3>Villa San Antonio</h3>
+                                <span class="point-status status-active">Activo</span>
+                            </div>
+                        </div>
+                        <div class="point-schedule">
+                            <h4>Horarios de Recolección:</h4>
+                            <p><strong>Lunes, Miércoles y Viernes</strong></p>
+                            <p>7:30 - 11:30 AM</p>
+                        </div>
+                        <div class="point-stats">
+                            <div class="stat">
+                                <span class="stat-label">Población:</span>
+                                <span class="stat-value">~10,500 hab.</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Frecuencia:</span>
+                                <span class="stat-value">3x/semana</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="point-card" data-animate="scale-up" data-delay="600">
+                        <div class="point-header">
+                            <div class="point-icon">
+                                <i class="fas fa-plus-circle" style="font-size: 32px; color: var(--color-text-light);"></i>
+                            </div>
+                            <div class="point-title">
+                                <h3>Otros Barrios</h3>
+                                <span class="point-status status-pending">En Proceso</span>
+                            </div>
+                        </div>
+                        <div class="point-schedule">
+                            <h4>Próximamente:</h4>
+                            <p>Se irán incorporando más barrios al sistema según el plan de expansión</p>
+                        </div>
+                        <div class="point-stats">
+                            <div class="stat">
+                                <span class="stat-label">Estado:</span>
+                                <span class="stat-value">En evaluación</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Inicio:</span>
+                                <span class="stat-value">Q2 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container-responsive">
+                <div class="cta-content" data-animate="fade-in">
+                    <h2 class="cta-title">¿Necesitas Reportar un Problema en tu Barrio?</h2>
+                    <p class="cta-description">
+                        Si no se realizó la recolección en tu barrio o tienes alguna incidencia, 
+                        reporta el problema directamente desde aquí.
+                    </p>
+                    <div class="cta-actions">
+                        <button class="btn btn-primary btn-lg" data-modal="contact-modal">
+                            Reportar Problema
+                        </button>
+                        <a href="./contact.html" class="btn btn-outline btn-lg">
+                            Ver Información de Contacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container-responsive">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-recycle" style="font-size: 32px; color: white; margin-right: 8px;"></i>
+                        <p class="footer-description">
+                            Plataforma móvil para la gestión eficiente de residuos sólidos urbanos 
+                            en el Distrito 11 de Santa Cruz de la Sierra, Bolivia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./about.html">Acerca de</a></li>
+                        <li><a href="./services.html">Servicios</a></li>
+                        <li><a href="./contact.html">Contacto</a></li>
+                        <li><a href="./points.html">Puntos de Residuos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Barrios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#plan-3000">Plan 3000</a></li>
+                        <li><a href="#Calle-Junin-&-21-de-Mayo">Calle Junin & 21 de Mayo</a></li>
+                        <li><a href="#villa-montes">Villa Montes</a></li>
+                        <li><a href="#Calle-Quijarro">Calle Quijarro</a></li>
+                        <li><a href="#villa-san-antonio">Villa San Antonio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <p>📧 residuos.distrito11@santacruz.gob.bo</p>
+                        <p>📞 +591 709-188-74</p>
+                        <p>📍 Distrito 11, Santa Cruz de la Sierra, Bolivia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Sistema de Gestión de Residuos Distrito 11. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <div class="modal" id="contact-modal" data-modal>
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <h3>Reportar Residuos</h3>
+            </div>
+            <div class="modal-body">
+                <form class="contact-form" data-validate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre Completo *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="barrio" class="form-label">Barrio *</label>
+                        <select id="barrio" name="barrio" class="form-input" required>
+                            <option value="">Selecciona tu barrio</option>
+                            <option value="plan-3000">Plan 3000</option>
+                            <option value="Calle-Junin-&-21-de-Mayo">Calle Junin & 21 de Mayo</option>
+                            <option value="villa-montes">Villa Montes</option>
+                            <option value="Calle-Quijarro">Calle Quijarro</option>
+                            <option value="villa-san-antonio">Villa San Antonio</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-reporte" class="form-label">Tipo de Reporte *</label>
+                        <select id="tipo-reporte" name="tipo-reporte" class="form-input" required>
+                            <option value="">Selecciona el tipo</option>
+                            <option value="recojo-no-realizado">Recojo no realizado</option>
+                            <option value="contenedor-lleno">Contenedor lleno</option>
+                            <option value="microbasural">Microbasural</option>
+                            <option value="residuos-peligrosos">Residuos peligrosos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Descripción del Problema *</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="4" 
+                                  placeholder="Describe la situación y la ubicación exacta..." required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar Reporte</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

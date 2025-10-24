@@ -1,0 +1,403 @@
+/* ========================================
+   PÁGINA PUNTOS DE RESIDUOS - Estilos específicos
+   ======================================== */
+
+/* Map Section */
+.map-section {
+    background-color: var(--color-background-white);
+    padding: var(--spacing-4xl) 0;
+}
+
+.map-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.map-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.map-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Interactive Map Points */
+.map-points {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.map-point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: all;
+    transition: all 0.3s ease;
+}
+
+.point-marker {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.point-marker i {
+    color: white;
+    font-size: 18px;
+}
+
+.point-info {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.point-info h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 0.25rem 0;
+}
+
+.point-info p {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.map-point:hover .point-marker {
+    transform: scale(1.2);
+    background-color: var(--color-primary-dark);
+}
+
+.map-point:hover .point-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Points List Section */
+.points-list-section {
+    background-color: var(--color-background);
+    padding: var(--spacing-4xl) 0;
+}
+
+.points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.point-card {
+    background-color: var(--color-background-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+}
+
+.point-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.point-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.point-icon {
+    flex-shrink: 0;
+}
+
+.point-title {
+    flex: 1;
+}
+
+.point-title h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 0.5rem 0;
+}
+
+.point-status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-active {
+    background-color: var(--color-success-light);
+    color: var(--color-success);
+}
+
+.status-pending {
+    background-color: var(--color-warning-light);
+    color: var(--color-warning);
+}
+
+.point-schedule {
+    margin-bottom: var(--spacing-lg);
+}
+
+.point-schedule h4 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.point-schedule p {
+    color: var(--color-text-light);
+    margin: 0.25rem 0;
+    font-size: var(--font-size-base);
+}
+
+.point-schedule strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.point-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text-white);
+    padding: var(--spacing-4xl) 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-white);
+}
+
+.cta-description {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-2xl);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.cta-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-actions .btn {
+    min-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 1023px) {
+    .map-container {
+        margin: 0 var(--spacing-md);
+    }
+    
+    .points-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .point-card {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .points-list-section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .point-marker {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .point-marker i {
+        font-size: 14px;
+    }
+    
+    .point-info {
+        bottom: 40px;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .point-info h4 {
+        font-size: 0.8rem;
+    }
+    
+    .point-info p {
+        font-size: 0.7rem;
+    }
+    
+    .point-card {
+        padding: var(--spacing-md);
+    }
+    
+    .point-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+    
+    .point-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .cta-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .cta-description {
+        font-size: var(--font-size-lg);
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-actions .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        margin: 0 var(--spacing-sm);
+    }
+    
+    .point-marker {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .point-marker i {
+        font-size: 12px;
+    }
+    
+    .point-info {
+        bottom: 35px;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .point-info h4 {
+        font-size: 0.75rem;
+    }
+    
+    .point-info p {
+        font-size: 0.65rem;
+    }
+    
+    .point-card {
+        padding: var(--spacing-sm);
+    }
+    
+    .point-title h3 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .point-schedule h4 {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Animation for map points */
+.map-point[data-animate] {
+    animation: fadeInScale 0.6s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Staggered animation for points */
+.map-point:nth-child(1) { animation-delay: 0.1s; }
+.map-point:nth-child(2) { animation-delay: 0.2s; }
+.map-point:nth-child(3) { animation-delay: 0.3s; }
+.map-point:nth-child(4) { animation-delay: 0.4s; }
+.map-point:nth-child(5) { animation-delay: 0.5s; }

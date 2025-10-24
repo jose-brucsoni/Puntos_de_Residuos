@@ -11,9 +11,9 @@ export function initWasteManagement() {
             apiUrl: '/api/waste-management',
             barrios: [
                 { id: 'plan-3000', name: 'Plan 3000', schedule: ['Lunes', 'Miércoles', 'Viernes'] },
-                { id: 'villa-1ro-mayo', name: 'Villa 1ro de Mayo', schedule: ['Martes', 'Jueves'] },
+                { id: 'Calle-Junin-&-21-de-Mayo', name: 'Calle Junin & 21 de Mayo', schedule: ['Martes', 'Jueves'] },
                 { id: 'villa-montes', name: 'Villa Montes', schedule: ['Lunes', 'Miércoles', 'Viernes'] },
-                { id: 'villa-copacabana', name: 'Villa Copacabana', schedule: ['Martes', 'Jueves'] },
+                { id: 'Calle-Quijarro', name: 'Calle Quijarro', schedule: ['Martes', 'Jueves'] },
                 { id: 'villa-san-antonio', name: 'Villa San Antonio', schedule: ['Lunes', 'Miércoles', 'Viernes'] }
             ],
             tiposReporte: [
