@@ -40,6 +40,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -70,14 +73,7 @@
                     </ul>
                 </div>
                 
-                <div class="nav-actions">
-                    <button class="btn btn-primary" data-modal="contact-modal">
-                        Contactar
-                    </button>
-                    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-                        <span class="hamburger"></span>
-                    </button>
-                </div>
+                
             </div>
         </nav>
     </header>
@@ -98,14 +94,7 @@
                             de Santa Cruz de la Sierra. Información en tiempo real, rutas eficientes 
                             y comunicación directa con el servicio de aseo.
                         </p>
-                        <div class="hero-actions">
-                            <button class="btn btn-primary btn-lg" data-modal="contact-modal">
-                                Reportar Residuos
-                            </button>
-                            <button class="btn btn-secondary btn-lg" data-scroll="#features">
-                                Ver Funcionalidades
-                            </button>
-                        </div>
+                        
                     </div>
                     <div class="hero-image" data-animate="slide-left">
                         <img src="./assets/images/ImagenDelDistrito.jpg" 
@@ -130,7 +119,7 @@
                 <div class="features-grid grid-responsive-3">
                     <div class="feature-card" data-animate="scale-up" data-delay="100">
                         <div class="feature-icon">
-                            <img src="./assets/icons/ui/map.svg" alt="Geolocalización" width="48" height="48">
+                            <i class="fas fa-route" style="font-size: 48px; color: var(--color-primary);"></i>
                         </div>
                         <h3 class="feature-title">Rutas de Recolección</h3>
                         <p class="feature-description">
@@ -141,7 +130,7 @@
                     
                     <div class="feature-card" data-animate="scale-up" data-delay="200">
                         <div class="feature-icon">
-                            <img src="./assets/icons/ui/analytics.svg" alt="Analytics" width="48" height="48">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 48px; color: var(--color-warning);"></i>
                         </div>
                         <h3 class="feature-title">Reportes Ciudadanos</h3>
                         <p class="feature-description">
@@ -152,7 +141,7 @@
                     
                     <div class="feature-card" data-animate="scale-up" data-delay="300">
                         <div class="feature-icon">
-                            <img src="./assets/icons/ui/notification.svg" alt="Notificaciones" width="48" height="48">
+                            <i class="fas fa-graduation-cap" style="font-size: 48px; color: var(--color-accent);"></i>
                         </div>
                         <h3 class="feature-title">Educación Ambiental</h3>
                         <p class="feature-description">
@@ -192,7 +181,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <img src="./assets/images/logos/logo-white.svg" alt="Residuos Distrito 11" class="footer-logo">
+                        <i class="fas fa-recycle" style="font-size: 32px; color: white; margin-right: 8px;"></i>
                         <p class="footer-description">
                             Plataforma móvil para la gestión eficiente de residuos sólidos urbanos 
                             en el Distrito 11 de Santa Cruz de la Sierra, Bolivia.
@@ -236,13 +225,13 @@
                 </div>
                 <div class="footer-social">
                     <a href="#" class="social-link" aria-label="Facebook">
-                        <img src="./assets/icons/social/facebook.svg" alt="Facebook" width="24" height="24">
+                        <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
                     </a>
                     <a href="#" class="social-link" aria-label="Twitter">
-                        <img src="./assets/icons/social/twitter.svg" alt="Twitter" width="24" height="24">
+                        <i class="fab fa-twitter" style="font-size: 24px;"></i>
                     </a>
                     <a href="#" class="social-link" aria-label="LinkedIn">
-                        <img src="./assets/icons/social/linkedin.svg" alt="LinkedIn" width="24" height="24">
+                        <i class="fab fa-linkedin-in" style="font-size: 24px;"></i>
                     </a>
                 </div>
             </div>

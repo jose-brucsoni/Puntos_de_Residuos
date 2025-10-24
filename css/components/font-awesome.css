@@ -1,0 +1,167 @@
+/* Font Awesome Icons Styles */
+
+/* Iconos de características principales */
+.feature-icon i,
+.value-icon i,
+.justification-icon i,
+.service-icon i {
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.feature-icon i:hover,
+.value-icon i:hover,
+.justification-icon i:hover,
+.service-icon i:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Iconos de contacto */
+.method-icon i {
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.method-icon i:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Iconos sociales */
+.social-link i {
+    transition: all 0.3s ease;
+}
+
+.social-link:hover i {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+/* Iconos del footer */
+.footer-brand i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-icon i,
+    .value-icon i,
+    .justification-icon i,
+    .service-icon i {
+        font-size: 40px !important;
+    }
+    
+    .method-icon i {
+        font-size: 20px !important;
+    }
+    
+    .footer-brand i {
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-icon i,
+    .value-icon i,
+    .justification-icon i,
+    .service-icon i {
+        font-size: 32px !important;
+    }
+    
+    .method-icon i {
+        font-size: 18px !important;
+    }
+    
+    .footer-brand i {
+        font-size: 20px !important;
+    }
+}
+
+/* Colores específicos para diferentes tipos de iconos */
+.fa-route {
+    color: var(--color-primary) !important;
+}
+
+.fa-exclamation-triangle {
+    color: var(--color-warning) !important;
+}
+
+.fa-graduation-cap {
+    color: var(--color-accent) !important;
+}
+
+.fa-chart-line,
+.fa-chart-bar {
+    color: var(--color-secondary) !important;
+}
+
+.fa-laptop-code {
+    color: var(--color-accent) !important;
+}
+
+.fa-users {
+    color: var(--color-secondary) !important;
+}
+
+.fa-microscope {
+    color: var(--color-primary) !important;
+}
+
+.fa-heart {
+    color: var(--color-error) !important;
+}
+
+.fa-tools {
+    color: var(--color-warning) !important;
+}
+
+.fa-user-graduate {
+    color: var(--color-accent) !important;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-map-marker-alt {
+    color: var(--color-primary) !important;
+}
+
+.fa-recycle {
+    color: white !important;
+}
+
+/* Animaciones para iconos */
+@keyframes iconPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.feature-icon i:hover,
+.service-icon i:hover {
+    animation: iconPulse 0.6s ease-in-out;
+}
+
+/* Efectos de hover mejorados */
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    color: white;
+}
